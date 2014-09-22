@@ -1,0 +1,270 @@
+<html>
+<head>
+<title>TestNG:  header Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>header Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 22 15:36:47 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>621 seconds (621032 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.registerloginTest.register()'><b>register</b><br>Test class: tests.registerloginTest</td>
+<td><div><pre>java.lang.AssertionError: firstname field not found
+	at tests.registerloginTest.register(registerloginTest.java:33)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace211489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211489'><pre>java.lang.AssertionError: firstname field not found
+	at org.testng.Assert.fail(Assert.java:94)
+	at tests.registerloginTest.register(registerloginTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>37</td>
+<td>tests.registerloginTest@844689</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.registerloginTest.login()'><b>login</b><br>Test class: tests.registerloginTest<br/>
+<a href="#Output-17423787" onClick='toggleBox("Output-17423787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-17423787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-17423787">
+login successfull with credentials of Sree<br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>tests.registerloginTest@844689</td></tr>
+<tr>
+<td title='tests.searchitemTest.searchIpod()'><b>searchIpod</b><br>Test class: tests.searchitemTest<br/>
+<a href="#Output-30090393" onClick='toggleBox("Output-30090393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-30090393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-30090393">
+The ipodlist1 in page one size is: 60<br/>
+Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod touch 32GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Space Gray... contains ipod<br/>
+Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Blue (MD775LL/A) contains ipod<br/>
+Apple iPod nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Silver... contains ipod<br/>
+Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Purple... contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Green... contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Pink (MD773LL/A) contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation) - Pink... contains ipod<br/>
+Apple iPod Touch 16GB MP3 Player (5th Generation) - ... contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod touch 64GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod Nano 16GB (7th Generation)with... contains ipod<br/>
+Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod shuffle 2GB MP3 Player - Yellow... contains ipod<br/>
+Apple iPod nano 16GB (7th generation) Collection -... contains ipod<br/>
+Apple iPod Touch 32GB MP3 Player (5th... contains ipod<br/>
+RCA 4GB MP3 Player - Black (TH1914) does not contain ipod<br/>
+Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod<br/>
+Apple iPod classic 160GB MP3 Player (7th Generation)... contains ipod<br/>
+RCA 4 GB MP3 Player with Built-in USB and Removable ... does not contain ipod<br/>
+Apple iPod touch 16GB MP3 Player - Assorted Colors contains ipod<br/>
+Mach Speed 4GB 180G2 Flash MP3 Player - Purple... does not contain ipod<br/>
+RCA MP3 FM Player Color Video 4-GB does not contain ipod<br/>
+MP4 Media Player (MT863S) does not contain ipod<br/>
+Mach Speed 4GB 180G2 Flash MP3 Player - Red... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 8GB MP3 Player - Black... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Purple... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Blue... does not contain ipod<br/>
+Mach Speed 4GB 2.8V Flash MP3 Player - Purple... does not contain ipod<br/>
+Hello Kitty MP3 Player - Multicolor (50009-TA) does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Red... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Gray... does not contain ipod<br/>
+GPX 2GB Flash MP3 Player (MW240P) - Pink does not contain ipod<br/>
+SanDisk Sansa Clip Zip 8GB MP3 Player - Grey... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Orange... does not contain ipod<br/>
+Mach Speed 4GB 2.8V Flash MP3 Player - Gunmetal... does not contain ipod<br/>
+SanDisk Sansa Clip Zip 4GB MP3 Player - Black... does not contain ipod<br/>
+Mach Speed 4GB 180G2 Flash MP3 Player - Blue... does not contain ipod<br/>
+Latte Ice 16GB Flash MP3 Player (LP-ICE16GBSLV) with... does not contain ipod<br/>
+Mach Speed Trio 8GB Flash MP3 Player (TRIO-T4300HD) ... does not contain ipod<br/>
+Mach Speed 4GB 180G2 Flash MP3 Player - Gunmetal... does not contain ipod<br/>
+Eclipse CLD 2GB Flash MP3 Player (ECLIPSE-CLD2TL) - ... does not contain ipod<br/>
+Audiovox iPod Clock Radio - White (CR8030iE5) contains ipod<br/>
+Griffin Survivor Case for iPod Touch 5th Generation ... contains ipod<br/>
+Scosche Goose FMTD3 Neck FM Transmitter with Digital... does not contain ipod<br/>
+Griffin Technology Survivor iPod touch 5th... contains ipod<br/>
+Belkin Shield Case for iPod touch 5th generation -... contains ipod<br/>
+Belkin iPod Touch Easefit Armband - Black... contains ipod<br/>
+Agent18 iPod Touch 5th Generation Case Celebration -... contains ipod<br/>
+Sony Speaker Dock for iPod/iPhone - Black... contains ipod<br/>
+cart container2  found<br/>
+The ipodlist2 in page 2 size is: 60<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>tests.searchitemTest@e54f3</td></tr>
+<tr>
+<td title='tests.headerTest.targetHeader()'><b>targetHeader</b><br>Test class: tests.headerTest<br/>
+<a href="#Output-31179941" onClick='toggleBox("Output-31179941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31179941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31179941">
+The size of header list is:7<br/>
+The current url of the clicked header link is:https://www-secure.target.com/EverestLoginView?langId=-1&storeId=10151&catalogId=10051&lnk=gnav_signin<br/>
+The current url of the clicked header link is:http://www.target.com/store-locator/find-stores#?lnk=gnav_findastore<br/>
+The current url of the clicked header link is:http://weeklyad.target.com/minneapolis-mn-55403/homepage#?lnk=gnav_weeklyad<br/>
+The current url of the clicked header link is:http://www.target.com/c/giftcards/-/N-5xsxu#?lnk=gnav_giftcards<br/>
+The current url of the clicked header link is:http://www.target.com/np/registry/-/N-56cy8#?lnk=gnav_registries<br/>
+The current url of the clicked header link is:http://www.target.com/np/target-list-portal/-/N-55z0c?registryType=L&placementAreas=1&placementType_0=home_page.right_rail_1&pageType=home_page&lnk=gnav_targetlists<br/>
+Searching open red card links  found<br/>
+</div>
+</td>
+<td></td>
+<td>198</td>
+<td>tests.headerTest@16dd645</td></tr>
+<tr>
+<td title='tests.sharelinksTest.targetSharelinks()'><b>targetSharelinks</b><br>Test class: tests.sharelinksTest<br/>
+<a href="#Output-26119223" onClick='toggleBox("Output-26119223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26119223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26119223">
+Container with Laptoplist size is:9<br/>
+The random list selection is:6<br/>
+The size of social link container is:6<br/>
+google plus <br/>
+https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/share?url%3Dhttp://www.target.com/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%2523prodSlot%253Dmedium_1_7%26gpsrc%3Dframeless&btmpl=popup<br/>
+twitter<br/>
+https://twitter.com/login?redirect_after_login=%2Fhome%3Fstatus%3DAcer%25C2%25AE%2B15%2522%2BSlim%2BLaptop%2BPC%2B%2528E5-511P-P1QH%2529%2Bwith%2B1TB%2BHard%2BDrive%252C%2B4GB%2BMemory%2B-%2BBlack...%2520http%3A%2F%2Fwww.target.com%2Fp%2Facer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black%2F-%2FA-15706129<br/>
+pin it <br/>
+https://www.pinterest.com/join/?next=/pin/create/button/%3Furl%3Dhttp%3A//www.target.com%3A80/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%26ref%3Dhttp%3A//www.target.com%3A80/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%26media%3Dhttp%3A//Img2.targetimg2.com/wcsstore/TargetSAS//img/p/15/70/15706129_201409130924.jpg%26layout%3Dvertical%26description%3DAcer%25C2%25AE%2B15<br/>
+</div>
+</td>
+<td></td>
+<td>113</td>
+<td>tests.sharelinksTest@eb3f66</td></tr>
+<tr>
+<td title='tests.footerTest.targetfooter()'><b>targetfooter</b><br>Test class: tests.footerTest<br/>
+<a href="#Output-27539909" onClick='toggleBox("Output-27539909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27539909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27539909">
+The size of Footer list is:6<br/>
+current url is: http://www.target.com/#30#?lnk=fnav_t_spc_2_3&intc=28073|null<br/>
+This footerlinks navigated to the correct site<br/>
+current url is: http://www.target.com/#31#?lnk=fnav_t_spc_2_4&intc=28073|null<br/>
+This footerlinks navigated to the correct site<br/>
+current url is: http://www.target.com/#32#?lnk=fnav_t_spc_2_5&intc=28073|null<br/>
+This footerlinks navigated to the correct site<br/>
+current url is: http://www.target.com/#33#?lnk=fnav_t_spc_2_6&intc=28073|null<br/>
+This footerlinks navigated to the correct site<br/>
+current url is: http://help.target.com/help/subcategoryarticle?childcat=CA+Transparency+in+Supply+Chains+Act&parentcat=Compliance#&lnk=fnav_t_spc_2_7&intc=28073|null<br/>
+This footerlinks navigated to the correct site<br/>
+current url is: http://help.target.com/help/subcategoryarticle?childcat=CA+Transparency+in+Supply+Chains+Act&parentcat=Compliance#&lnk=fnav_t_spc_2_7&intc=28073|null<br/>
+this footer links naviagted to wrong site<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>tests.footerTest@d7cf62</td></tr>
+</table><p>
+</body>
+</html>

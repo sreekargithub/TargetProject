@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite1">
+              <span class="suite-name border-failed">suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite1">
+                    <span>D:\Seltraining\Workspace 9 00\Target\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite1" class="hide-methods failed suite-suite1"> (hide)</a> <!-- hide-methods failed suite-suite1 -->
+                      <a href="#" panel-name="suite-suite1" class="show-methods failed suite-suite1"> (show)</a> <!-- show-methods failed suite-suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.registerloginTest" hash-for-method="register">register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite1" class="hide-methods passed suite-suite1"> (hide)</a> <!-- hide-methods passed suite-suite1 -->
+                      <a href="#" panel-name="suite-suite1" class="show-methods passed suite-suite1"> (show)</a> <!-- show-methods passed suite-suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.registerloginTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.searchitemTest" hash-for-method="searchIpod">searchIpod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.headerTest" hash-for-method="targetHeader">targetHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.sharelinksTest" hash-for-method="targetSharelinks">targetSharelinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="tests.footerTest" hash-for-method="targetfooter">targetfooter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite1" class="panel suite1">
+          <div class="suite-suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.registerloginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="register">
+                  </a> <!-- register -->
+                  <span class="method-name">register</span>
+                  <div class="stack-trace">java.lang.AssertionError: firstname field not found
+	at tests.registerloginTest.register(registerloginTest.java:33)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-failed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.registerloginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.sharelinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="targetSharelinks">
+                  </a> <!-- targetSharelinks -->
+                  <span class="method-name">targetSharelinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.headerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="targetHeader">
+                  </a> <!-- targetHeader -->
+                  <span class="method-name">targetHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.searchitemTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchIpod">
+                  </a> <!-- searchIpod -->
+                  <span class="method-name">searchIpod</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.footerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="targetfooter">
+                  </a> <!-- targetfooter -->
+                  <span class="method-name">targetfooter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+        </div> <!-- panel suite1 -->
+        <div panel-name="test-xml-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Seltraining\Workspace 9 00\Target\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite1&quot;&gt;
+  &lt;test name=&quot;header Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.footerTest&quot;/&gt;
+      &lt;class name=&quot;tests.headerTest&quot;/&gt;
+      &lt;class name=&quot;tests.registerloginTest&quot;/&gt;
+      &lt;class name=&quot;tests.searchitemTest&quot;/&gt;
+      &lt;class name=&quot;tests.sharelinksTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- header Test --&gt;
+&lt;/suite&gt; &lt;!-- suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">header Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite1');
+function tableData_suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'targetHeader')
+data.setCell(0, 2, 'tests.headerTest')
+data.setCell(0, 3, 198614);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'targetSharelinks')
+data.setCell(1, 2, 'tests.sharelinksTest')
+data.setCell(1, 3, 113939);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchIpod')
+data.setCell(2, 2, 'tests.searchitemTest')
+data.setCell(2, 3, 89494);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'tests.registerloginTest')
+data.setCell(3, 3, 62743);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'targetfooter')
+data.setCell(4, 2, 'tests.footerTest')
+data.setCell(4, 3, 53368);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'register')
+data.setCell(5, 2, 'tests.registerloginTest')
+data.setCell(5, 3, 37915);
+window.suiteTableData['suite1']= { tableData: data, tableDiv: 'times-div-suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <div id="times-div-suite1">
+              </div> <!-- times-div-suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchIpod</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The ipodlist1 in page one size is: 60</span>
+                <span class="reporter-method-output">Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod touch 32GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Space Gray... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Blue (MD775LL/A) contains ipod</span>
+                <span class="reporter-method-output">Apple iPod nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Silver... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Purple... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Green... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Pink (MD773LL/A) contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation) - Pink... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 16GB MP3 Player (5th Generation) - ... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod touch 64GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Nano 16GB (7th Generation)with... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod shuffle 2GB MP3 Player - Yellow... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod nano 16GB (7th generation) Collection -... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 32GB MP3 Player (5th... contains ipod</span>
+                <span class="reporter-method-output">RCA 4GB MP3 Player - Black (TH1914) does not contain ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 32GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod Touch 64GB MP3 Player (5th Generation)-... contains ipod</span>
+                <span class="reporter-method-output">Apple iPod classic 160GB MP3 Player (7th Generation)... contains ipod</span>
+                <span class="reporter-method-output">RCA 4 GB MP3 Player with Built-in USB and Removable ... does not contain ipod</span>
+                <span class="reporter-method-output">Apple iPod touch 16GB MP3 Player - Assorted Colors contains ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 180G2 Flash MP3 Player - Purple... does not contain ipod</span>
+                <span class="reporter-method-output">RCA MP3 FM Player Color Video 4-GB does not contain ipod</span>
+                <span class="reporter-method-output">MP4 Media Player (MT863S) does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 180G2 Flash MP3 Player - Red... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 8GB MP3 Player - Black... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Purple... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Blue... does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 2.8V Flash MP3 Player - Purple... does not contain ipod</span>
+                <span class="reporter-method-output">Hello Kitty MP3 Player - Multicolor (50009-TA) does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Red... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Gray... does not contain ipod</span>
+                <span class="reporter-method-output">GPX 2GB Flash MP3 Player (MW240P) - Pink does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 8GB MP3 Player - Grey... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Orange... does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 2.8V Flash MP3 Player - Gunmetal... does not contain ipod</span>
+                <span class="reporter-method-output">SanDisk Sansa Clip Zip 4GB MP3 Player - Black... does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 180G2 Flash MP3 Player - Blue... does not contain ipod</span>
+                <span class="reporter-method-output">Latte Ice 16GB Flash MP3 Player (LP-ICE16GBSLV) with... does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed Trio 8GB Flash MP3 Player (TRIO-T4300HD) ... does not contain ipod</span>
+                <span class="reporter-method-output">Mach Speed 4GB 180G2 Flash MP3 Player - Gunmetal... does not contain ipod</span>
+                <span class="reporter-method-output">Eclipse CLD 2GB Flash MP3 Player (ECLIPSE-CLD2TL) - ... does not contain ipod</span>
+                <span class="reporter-method-output">Audiovox iPod Clock Radio - White (CR8030iE5) contains ipod</span>
+                <span class="reporter-method-output">Griffin Survivor Case for iPod Touch 5th Generation ... contains ipod</span>
+                <span class="reporter-method-output">Scosche Goose FMTD3 Neck FM Transmitter with Digital... does not contain ipod</span>
+                <span class="reporter-method-output">Griffin Technology Survivor iPod touch 5th... contains ipod</span>
+                <span class="reporter-method-output">Belkin Shield Case for iPod touch 5th generation -... contains ipod</span>
+                <span class="reporter-method-output">Belkin iPod Touch Easefit Armband - Black... contains ipod</span>
+                <span class="reporter-method-output">Agent18 iPod Touch 5th Generation Case Celebration -... contains ipod</span>
+                <span class="reporter-method-output">Sony Speaker Dock for iPod/iPhone - Black... contains ipod</span>
+                <span class="reporter-method-output">cart container2  found</span>
+                <span class="reporter-method-output">The ipodlist2 in page 2 size is: 60</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">login successfull with credentials of Sree</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">targetfooter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The size of Footer list is:6</span>
+                <span class="reporter-method-output">current url is: http://www.target.com/#30#?lnk=fnav_t_spc_2_3&intc=28073|null</span>
+                <span class="reporter-method-output">This footerlinks navigated to the correct site</span>
+                <span class="reporter-method-output">current url is: http://www.target.com/#31#?lnk=fnav_t_spc_2_4&intc=28073|null</span>
+                <span class="reporter-method-output">This footerlinks navigated to the correct site</span>
+                <span class="reporter-method-output">current url is: http://www.target.com/#32#?lnk=fnav_t_spc_2_5&intc=28073|null</span>
+                <span class="reporter-method-output">This footerlinks navigated to the correct site</span>
+                <span class="reporter-method-output">current url is: http://www.target.com/#33#?lnk=fnav_t_spc_2_6&intc=28073|null</span>
+                <span class="reporter-method-output">This footerlinks navigated to the correct site</span>
+                <span class="reporter-method-output">current url is: http://help.target.com/help/subcategoryarticle?childcat=CA+Transparency+in+Supply+Chains+Act&parentcat=Compliance#&lnk=fnav_t_spc_2_7&intc=28073|null</span>
+                <span class="reporter-method-output">This footerlinks navigated to the correct site</span>
+                <span class="reporter-method-output">current url is: http://help.target.com/help/subcategoryarticle?childcat=CA+Transparency+in+Supply+Chains+Act&parentcat=Compliance#&lnk=fnav_t_spc_2_7&intc=28073|null</span>
+                <span class="reporter-method-output">this footer links naviagted to wrong site</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">targetHeader</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">The size of header list is:7</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:https://www-secure.target.com/EverestLoginView?langId=-1&storeId=10151&catalogId=10051&lnk=gnav_signin</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:http://www.target.com/store-locator/find-stores#?lnk=gnav_findastore</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:http://weeklyad.target.com/minneapolis-mn-55403/homepage#?lnk=gnav_weeklyad</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:http://www.target.com/c/giftcards/-/N-5xsxu#?lnk=gnav_giftcards</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:http://www.target.com/np/registry/-/N-56cy8#?lnk=gnav_registries</span>
+                <span class="reporter-method-output">The current url of the clicked header link is:http://www.target.com/np/target-list-portal/-/N-55z0c?registryType=L&placementAreas=1&placementType_0=home_page.right_rail_1&pageType=home_page&lnk=gnav_targetlists</span>
+                <span class="reporter-method-output">Searching open red card links  found</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">targetSharelinks</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Container with Laptoplist size is:9</span>
+                <span class="reporter-method-output">The random list selection is:6</span>
+                <span class="reporter-method-output">The size of social link container is:6</span>
+                <span class="reporter-method-output">google plus </span>
+                <span class="reporter-method-output">https://accounts.google.com/ServiceLogin?service=oz&passive=1209600&continue=https://plus.google.com/share?url%3Dhttp://www.target.com/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%2523prodSlot%253Dmedium_1_7%26gpsrc%3Dframeless&btmpl=popup</span>
+                <span class="reporter-method-output">twitter</span>
+                <span class="reporter-method-output">https://twitter.com/login?redirect_after_login=%2Fhome%3Fstatus%3DAcer%25C2%25AE%2B15%2522%2BSlim%2BLaptop%2BPC%2B%2528E5-511P-P1QH%2529%2Bwith%2B1TB%2BHard%2BDrive%252C%2B4GB%2BMemory%2B-%2BBlack...%2520http%3A%2F%2Fwww.target.com%2Fp%2Facer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black%2F-%2FA-15706129</span>
+                <span class="reporter-method-output">pin it </span>
+                <span class="reporter-method-output">https://www.pinterest.com/join/?next=/pin/create/button/%3Furl%3Dhttp%3A//www.target.com%3A80/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%26ref%3Dhttp%3A//www.target.com%3A80/p/acer-15-slim-laptop-pc-e5-511p-p1qh-with-1tb-hard-drive-4gb-memory-black/-/A-15706129%26media%3Dhttp%3A//Img2.targetimg2.com/wcsstore/TargetSAS//img/p/15/70/15706129_201409130924.jpg%26layout%3Dvertical%26description%3DAcer%25C2%25AE%2B15</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.headerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">intialize</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.searchitemTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">intialize</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.sharelinksTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">intialize</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.footerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">intialize</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.registerloginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">intialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.footerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">targetfooter</span>
+                <span class="method-start">12245 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">65613 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.headerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">65615 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">targetHeader</span>
+                <span class="method-start">76716 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">275330 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.registerloginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">275331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">285793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">348536 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">348537 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">register</span>
+                <span class="method-start">359657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">397573 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.searchitemTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">397573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchIpod</span>
+                <span class="method-start">407799 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">497293 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.sharelinksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">497294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">targetSharelinks</span>
+                <span class="method-start">507285 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">621224 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

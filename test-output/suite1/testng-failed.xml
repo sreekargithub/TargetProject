@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite1]">
+  <test name="header Test(failed)">
+    <classes>
+      <class name="tests.registerloginTest">
+        <methods>
+          <include name="register"/>
+          <include name="beforeMethod"/>
+          <include name="intialize"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.registerloginTest -->
+      <class name="tests.sharelinksTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.sharelinksTest -->
+      <class name="tests.headerTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.headerTest -->
+      <class name="tests.searchitemTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.searchitemTest -->
+      <class name="tests.footerTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- tests.footerTest -->
+    </classes>
+  </test> <!-- header Test(failed) -->
+</suite> <!-- Failed suite [suite1] -->
