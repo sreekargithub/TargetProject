@@ -50,7 +50,7 @@ public class TestBase {
 		log.debug("Loading the Helper class files.....");
 		help= new Helper();
 		
-		System.out.println("Choosing the browser: "+ config.getProperty("browserType"));
+		Reporter.log("Choosing the browser: "+ config.getProperty("browserType"));
 		
 			}
 }
