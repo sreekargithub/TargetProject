@@ -29,6 +29,7 @@ public class footerTest extends Helper
 		  	  if(driver.findElements(By.tagName(OR.getProperty("footer_tagname"))).size()==0)
 		  	  {
 		  		Assert.fail("footer tags with 'a' not found");
+		  		System.out.println("a");
 		  	  }
 		  
 		  	 List<WebElement> footerlist= driver.findElement(By.cssSelector(OR.getProperty("footer_classname"))).findElements(By.tagName(OR.getProperty("footer_tagname")));
